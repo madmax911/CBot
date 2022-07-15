@@ -32,4 +32,7 @@ Windows users:
 Linux users:
   apt install nodejs
 
-    (your package manager may vary)
+    (your package manager may vary; - yum, pacman, dnf, etc...)
+
+Mac users:
+  brew install node
