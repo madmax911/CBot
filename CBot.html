@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <body>
+    <input id="txtMsg" type="text" value="Hi" />
+    <button id="btnSend">Send...</button>
+    <script>
+
+      let xhr1 = new XMLHttpRequest();
+
+      btnSend.onclick = () =>
+      {
+        xhr1.open("GET", "http://localhost:8004/" + txtMsg.value);
+        xhr1.send();
+      }
+
+    </script>
+  </body>
+</html>
