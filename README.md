@@ -13,6 +13,10 @@ The client also includes a local html file to access it's own server on localhos
 
 The only thing the client must do is run node CBot_client.js and open CBot.html.  This is a work in progress / an idea I had.  This would be a nice collaboration tool for local networks who want to operate with their own server - not relying on a cloud, with this light-weight tool.
 
+The request flow should look something like this...
+
+Client HTML -> (HTTP) <-> NodeJS localhost -> (UDP) -> NodeJS Server -> (UDP) -> NodeJS localhost #2 <-> (HTTP) -> Client HTML #2
+
 Here's a diagram of what that might look like...
 
 <img src="Cbot_design.png" />
