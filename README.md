@@ -1,6 +1,8 @@
 # CBot
 Rapid update http-to-udp chat bot and server
 
+Why?  For fun - that's all.
+
 This is a variation on a chat system that's a cross between ip/port relay chat and modern http requests based web chat.
 
 The trouble with a strict http request based server is it relies on polling so the server gets a lot of unnecessary traffic.  It would be nice if the server just sent an update to all it's clients only when it's requested to be changed.
