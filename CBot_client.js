@@ -8,7 +8,7 @@ udp_cli.connect(19487, '10.220.36.200');
 http.createServer((req,resp) =>
 {
   let str = Buffer.from(req.url.slice(1));
-  console.log(str);
+  console.log(str.toString());
 
   udp_cli.send(str);
 
