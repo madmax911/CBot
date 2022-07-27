@@ -38,3 +38,13 @@ Linux users:
 
 Mac users:
   brew install node
+
+=========================================================================
+
+I envision it being a real-time chat where each person sees what the other is typing in realtime.  How's it accomplished.  With each edit, the entire chat window is resent to all members in a single udp datagram.  It can be cut off to the last 200 - 8000 chars with a sliding window style setup to achieve this.  In most instances that would be ok,  But imagine if in chatting, you wanted to correct a spelling mistake.  You could go back and edit it.  And each time you pressed a key, the other people would INSTANTLY see it.
+
+There are a couple of ways you could do this.  For each person to have a list of the chat members and send to all (even multicast could work).  Or they could send to a central server that would repeat the message in UDP to it's known list of clients upon receiving a datagram.
+
+There can be a shared text window or each user can get their own person-to-person window (probably the liklier case).  So far I've written the client-side HTML, the client-side NodeJS server and the server component.  It could be connected together by several means mentioned above to achieve something great.
+
+Anyone want to go on an interesting JavaScript journey with me with this fun LAN chat app idea?  Instant editable chat?
