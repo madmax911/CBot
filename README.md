@@ -48,3 +48,12 @@ There are a couple of ways you could do this.  For each person to have a list of
 There can be a shared text window or each user can get their own person-to-person window (probably the liklier case).  So far I've written the client-side HTML, the client-side NodeJS server and the server component.  It could be connected together by several means mentioned above to achieve something great.
 
 Anyone want to go on an interesting JavaScript journey with me with this fun LAN chat app idea?  Instant editable chat?
+
+-----------------------
+
+If you want to try this, run these commands in each in it's own terminal
+
+node CBot_server.js
+node CBot_client.js
+
+Then open CBot.html in a browser (from file://).
