@@ -57,3 +57,7 @@ node CBot_server.js
 node CBot_client.js
 
 Then open CBot.html in a browser (from file://).
+
+-----------------------
+
+You can use nodereload.bash in place of node if you want.  It's basically a knockoff version of nodemod.
