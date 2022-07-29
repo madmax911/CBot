@@ -3,8 +3,9 @@ const dgram = require('dgram');
 
 const udp_cli = dgram.createSocket('udp4');
 
-udp_cli.connect(19487, '10.220.36.200');
-
+udp_cli.connect(19487, '127.0.0.1');  // This can be anyone who wants to be the server.
+                                      // or if it's run as a peer-to-peer 1-to-1 connection
+                                      // it it can be the other peer.
 http.createServer((req,resp) =>
 {
   let str = Buffer.from(req.url.slice(1));
