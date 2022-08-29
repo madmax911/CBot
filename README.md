@@ -51,6 +51,12 @@ Anyone want to go on an interesting JavaScript journey with me with this fun LAN
 
 -----------------------
 
+Side-note:  Chat.exe has been included as an example of how such a thing above might be implemented -- albeit in exe form, not the preferred HTMl/JavaScript/NodeJS.
+
+If you want to try chat.exe to see how it works, the password to it is adminpw.  Run it on 2 different computers and set them to communicate with each other's IP addresses or computer name.  Sorry, I don't have the source for this - I wrote it years ago.  It's just an example now though.
+
+-----------------------
+
 If you want to try this, run these commands in each in it's own terminal
 
 node CBot_server.js
